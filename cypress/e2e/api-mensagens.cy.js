@@ -3,6 +3,7 @@ describe('Api Adopet', () => {
         cy.request({
             method: 'GET',
             url: 'https://adopet-api-i8qu.onrender.com/mensagem/11643cd6-7112-415b-95d2-07904b0d1a1c',
+            // Atualizar o ID antes de executar o teste.
             headers: Cypress.env()
         }).then((res) => {
             expect(res.status).to.equal(200);
